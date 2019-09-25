@@ -1,9 +1,9 @@
 var homePage = require('../pages/HomePage');
-
+var page = new homePage();
 describe("demo test", function(){
     var op;
     it("add test", function(){
-        var page = new homePage();
+        
         browser.get(browser.params.Url);
        // page.get("https://juliemr.github.io/protractor-demo/");
         page.add(10,6);
@@ -14,7 +14,7 @@ describe("demo test", function(){
     });
 
     it("subtract test", function(){
-        var page = new homePage();
+        //var page = new homePage();
         browser.get(browser.params.Url);
         //page.get("https://juliemr.github.io/protractor-demo/");
         page.subtract(10,6);
